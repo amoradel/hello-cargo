@@ -3,7 +3,7 @@ fn main() {
 
     //Declaracion de variables
     let name = "Anibal"; //Inmutable (como una variable static)
-    let mut age = 30; //mMtable (que se puede cambiar el valor)
+    let mut age: u8 = 30; //mMtable (que se puede cambiar el valor)
     print!("Hola {}, Tu edad es {}, feliciades\n\n", name, age);
     age = 32;
     print!("Hola {}, Tu edad es {}, feliciades\n\n", name, age);
@@ -19,4 +19,9 @@ fn main() {
     let shadow_num = shadow_num * 2; //20
 
     println!("The number is {}.", shadow_num);
+
+    //Anotaciones de tipo
+    let number: u32 = 14;
+    println!("The number is {}.", number);
+    // let number: u32 = "14"; //error
 }
